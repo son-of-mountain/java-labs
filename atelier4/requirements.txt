@@ -1,0 +1,21 @@
+Université Abdelmalek Essaadi
+Faculté ses Sciences et techniques de Tanger
+Département Génie Informatique
+Cycle Master: SIM
+Applications Distribuées
+Pr . ELAACHAk LOTFI
+Mise en place d’une application Rest API Spring Boot
+Objectif : L’objectif principal de cet atelier et de pratiquer la mise en place d’une application web en
+utilisant la technologie Spring « Spring Data, Spring MVC, Spring IOC , Angular/React», par
+l ‘intermédiaire du SpringBoot.
+Outils : Intellij, Maven, Spring Boot Initilizer , MySQL, JPA, Hibernate, Resr controller .
+L’application web sera destinée pour gérer les absences des étudiants d’une école maternelle .
+Étape 1 : Établissez un diagramme de classe équivalent à cette petite gestion
+Étape 2 : Créez tous les entités JPA selon le digramme de classe
+Étape 3 : Créez la couche Repository des entités nécessaires pour le bon fonctionnement de
+l ‘application web
+Étape 4 : Créez la couche Service qui contient tous les interfaces et classes implémentation qui font
+appellent aux méthodes de la couche Repository, par l ‘intermédiaire des injections des dépendances
+@autowired
+étape 5 : Créez la couche Contrôleur REST en utilisant le springMVC
+étape 6 : Créez les deux CRUD (IHM) Étudiants et absences en utilisant Angular/Recat
