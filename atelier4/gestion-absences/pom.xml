@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ma.fstt</groupId>
-	<artifactId>gestion-absences</artifactId>
+	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gestion-absences</name>
 	<description>gestion-absences</description>
