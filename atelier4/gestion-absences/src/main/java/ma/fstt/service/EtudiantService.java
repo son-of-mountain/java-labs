@@ -9,6 +9,6 @@ import java.util.Optional;
 public interface EtudiantService {
     Etudiant saveEtudiant(Etudiant etudiant);
     Optional<Etudiant> findEtudiantById(Long id);
-    List<Etudiant> finAllEtudiant();
+    List<Etudiant> finAllEtudiants();
     void deleteEtudiant(Long id);
 }

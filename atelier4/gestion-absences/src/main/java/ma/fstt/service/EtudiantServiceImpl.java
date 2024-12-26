@@ -9,26 +9,29 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 import java.util.List;
 
-public interface EtudiantServiceImpl implements EtudiantService{
+@Service
+public class EtudiantServiceImpl implements EtudiantService {
 
     @Autowired
-    private EtudiantService etudiantService;
+    private EtudiantRepository etudiantRepository;
 
     @Override
-    public Etudiant saveEtudiant(Etudiant etudiant){
-        return etudiantRepository.save(Etudiant);
+    public Etudiant saveEtudiant(Etudiant etudiant) {
+        return etudiantRepository.save(etudiant);
     }
 
     @Override
-    public Optional<Etudiant> findEtudiantById(Long id){
-        return etudiantService.finAll();
+    public Optional<Etudiant> findEtudiantById(Long id) {
+        return etudiantRepository.findById(id);
     }
 
     @Override
-    public void deleteEtudiantById(Long id){
-        etudiantRepository.deleteById(id);
+    public List<Etudiant> finAllEtudiants() {
+        return etudiantRepository.findAll();
     }
 
-
-
+    @Override
+    public void deleteEtudiant(Long id) {
+         etudiantRepository.deleteById(id);
+    }
 }
